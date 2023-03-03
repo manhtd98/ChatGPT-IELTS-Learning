@@ -28,11 +28,6 @@ const generateButtons = [
     tooltip: "generate 3 arguments to oppose the statement",
   },
   {
-    name: "Sample answer",
-    promptType: "sample_answer",
-    tooltip: "Write an sample essay",
-  },
-  {
     name: "Introduction",
     promptType: "introduction",
     tooltip: "Write a short introduction paragraph for an essay",
