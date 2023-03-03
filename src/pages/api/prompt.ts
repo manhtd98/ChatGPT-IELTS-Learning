@@ -140,7 +140,7 @@ export default async function handler(
     {
       input: prompt,
     },
-    { headers: { 'Authorization': "Basic cld6n7eoo0065sr1acbwczykv" } },
+    { headers: { 'Authorization': "Basic " + process.env.OPENAI_API_KEY } },
   )
     .then((response) => {
       // console.log(response.data);
