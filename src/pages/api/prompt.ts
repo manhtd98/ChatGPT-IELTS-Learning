@@ -135,7 +135,7 @@ export default async function handler(
     headers: { 'Authorization': "Basic cld6n7eoo0065sr1acbwczykv" },
     body: JSON.stringify({ 'input': prompt }),
   };
-  console.log("RESQUET SENDING TO SERVER");
+  console.log(prompt);
   await axios.post('https://dashboard.scale.com/spellbook/api/app/kw1n3er6',
     {
       input: prompt,
@@ -143,7 +143,7 @@ export default async function handler(
     { headers: { 'Authorization': "Basic cld6n7eoo0065sr1acbwczykv" } },
   )
     .then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       res.status(200).json({ result: response.data.text });
     }, (error) => {
       console.log(error);
