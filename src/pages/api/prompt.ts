@@ -130,12 +130,6 @@ export default async function handler(
     });
     return;
   }
-  const requestOptions = {
-    method: "POST",
-    headers: { 'Authorization': "Basic cld6n7eoo0065sr1acbwczykv" },
-    body: JSON.stringify({ 'input': prompt }),
-  };
-  console.log(prompt);
   await axios.post('https://dashboard.scale.com/spellbook/api/app/kw1n3er6',
     {
       input: prompt,
